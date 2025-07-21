@@ -83,3 +83,9 @@
         width: 50%;
     }
 }
+
+@media (max-width: 992px) {
+    .search_input {
+        width: 40%;
+    }
+}

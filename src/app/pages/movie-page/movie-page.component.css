@@ -79,6 +79,10 @@
     .movie_image_parent {
         width: 100%;
     }
+
+    .movie_image_parent img {
+            width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -113,21 +117,28 @@
 }
 
 @media (max-width: 991px) {
+
+    .movie_inner_container {
+        gap: 20px;
+    }
+
     .movie_image {
-        width: 50%;
+        width: 100%;
     }
 
     .movie_image_parent {
         width: 25%;
         height: auto;
+        margin: auto;
     }
 
     .movie_title {
-        width: 27px;
+        font-size: 27px;
     }
 
     .movie_plot {
         font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .movie_additional_details_header {
