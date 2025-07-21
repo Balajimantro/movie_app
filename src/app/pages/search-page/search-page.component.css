@@ -71,3 +71,15 @@
     display: flex;
     gap: 20px;
 }
+
+@media (max-width: 576px) {
+    .search_input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search_input {
+        width: 50%;
+    }
+}
