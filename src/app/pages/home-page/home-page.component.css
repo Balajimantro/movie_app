@@ -53,3 +53,8 @@
 .search_more_btn:hover {
     background-color: #556af1;
 }
+
+.home_movie_image {
+    width: 70%;
+    height: auto;
+}
