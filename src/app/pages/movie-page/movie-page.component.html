@@ -1,0 +1,23 @@
+<div class="movie_container">
+    <div class="movie_inner_container">
+        <div class="movie_image_parent">
+            <img src="{{movieDetails?.info?.image_url}}" alt="" class="movie_image">
+        </div>
+
+        <div class="movie_details_parent"> 
+            <div class="movie_title">{{movieDetails?.title}}</div>
+            <div class="movie_director"> (<strong>Director: </strong> <span *ngFor="let director of movieDetails?.info?.directors; let i = index">{{director}}</span>)</div>
+
+            <p class="movie_plot"> <strong>Plot:</strong> {{movieDetails?.info?.plot}}</p>
+            <p class="movie_plot"> <strong>Genres:</strong> {{movieDetails?.info?.genres}}</p>
+            <p class="movie_plot"> <strong>Actors:</strong> {{movieDetails?.info?.actors}}</p>
+
+            <div class="movie_additional_details_header">Movie Additional Details:</div>
+            <div class="movie_additional_details">
+                <p class="movie_plot"> <strong>Released Date:</strong> {{movieDetails?.info?.release_date}}</p>
+                <p class="movie_plot"> <strong>Running Time:</strong> {{movieDetails?.info?.running_time_secs}}</p>
+                <p class="movie_plot"> <strong>Rating:</strong> {{movieDetails?.info?.rating}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="search_container">
+    <!-- search header -->
+    <div class="search_header">Search Movies</div>
+
+    <!-- search input -->
+    <ng-container>
+        <div class="search_input_parent">
+            <input type="text" class="search_input" placeholder="Enter movie name" [(ngModel)]="inputData" (input)="searchMovie(inputData)" >
+        </div>
+    
+        <!-- searched movies names -->
+        <div *ngIf="moviesList.length > 0" class="searched_movies_parent">
+            <div class="searched_movies" *ngFor="let movie of moviesList" (click)="goToMoviePage(movie)" >
+                {{movie}}
+            </div>
+        </div>
+    </ng-container>
+</div>

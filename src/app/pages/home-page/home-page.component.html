@@ -1,0 +1,17 @@
+<div class="home_container">
+    <div class="home_header_text">Featured Movies</div>
+
+    <div class="home_movie_card_container_parent">
+        <div class="home_movie_card_container" *ngFor="let movie of movies">
+            <img src="{{movie?.info?.image_url}}" alt="movie-image" class="home_movie_image" >
+            <div>{{movie.title}}</div>
+            <div>{{movie.info.plot}}</div>
+        </div>
+    </div>
+
+    <!-- search more btn -->
+    <div class="search_more_btn_parent">
+        <button class="search_more_btn" (click)="loadMoreMovies()">+ Load More</button>
+        <button class="search_more_btn" routerLink="/search">Search More</button>
+    </div>
+</div>
